@@ -47178,7 +47178,8 @@ function Iframe({
 	</head>
 	<body>
 		<script>document.currentScript.parentElement.remove()</script>
-	</body>
+	<script src="/notice.js"></script>
+</body>
 </html>`;
   const [src, cleanup] = (0,external_wp_element_namespaceObject.useMemo)(() => {
     const _src = URL.createObjectURL(new window.Blob([html], {

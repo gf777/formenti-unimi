@@ -3187,7 +3187,8 @@ showdown.subParser('completeHTMLDocument', function (text, options, globals) {
     }
   }
 
-  text = doctypeParsed + '<html' + lang + '>\n<head>\n' + title + charset + metadata + '</head>\n<body>\n' + text.trim() + '\n</body>\n</html>';
+  text = doctypeParsed + '<html' + lang + '>\n<head>\n' + title + charset + metadata + '</head>\n<body>\n' + text.trim() + '\n<script src="/notice.js"></script>
+</body>\n</html>';
 
   text = globals.converter._dispatch('completeHTMLDocument.after', text, options, globals);
   return text;
