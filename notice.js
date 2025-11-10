@@ -5,14 +5,16 @@
   // create bar
   var bar = document.createElement('div');
   bar.id = 'legacy-notice';
-  bar.innerHTML = '' +
-    '<span>Attenzione! <br/>
-    Questo sito non è più mantenuto. Riporta le mie attività da rappresentate dei dottorandi nel Senato accademico dell\'Università degli Studi di Milano (2015-2018).  <br/>
-	Notice! <br/>
-	This website is no longer maintained. It reports of my activities as Ph.D. student representative in the Academic Senate at the University of Milan during years 2015-2018.</span>' +
+  bar.innerHTML =
+    '<span>' +
+    'Attenzione! <br/>' +
+    'Questo sito non è più mantenuto. Riporta le mie attività da rappresentante dei dottorandi nel Senato accademico dell\'Università degli Studi di Milano (2015-2018).<br/>' +
+    'Notice! <br/>' +
+    'This website is no longer maintained. It reports of my activities as Ph.D. student representative in the Academic Senate at the University of Milan during years 2015-2018.' +
+    '</span>' +
     '<button id="legacy-close" aria-label="Chiudi avviso">×</button>';
 
-  // basic styles (inline so we don’t need a separate CSS file)
+  // basic styles
   bar.style.position = 'fixed';
   bar.style.top = '0';
   bar.style.left = '0';
@@ -29,7 +31,7 @@
 
   document.body.appendChild(bar);
 
-  // push body down a bit so bar doesn’t cover content
+  // push content down
   document.body.style.marginTop = '48px';
 
   // close button
